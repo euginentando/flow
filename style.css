@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+body{
+  font-family: roboto;
+}
 nav{
   padding: 1rem;
 }
@@ -29,4 +32,46 @@ nav ul li a{
 nav ul li a :hover{
   background-color: rgb(56, 56, 56);
   border-radius: 5px;
+}
+
+
+
+.article{
+  -webkit-columns: 200px 2;
+  -moz-columns: 200px 2;
+  columns: 200px 2;
+  column-gap: 25px;
+}
+
+.tittle{
+  column-span: all;
+}
+
+.main-banner {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.mySlides {
+  display: none;
+  height: 100%;
+}
+
+.banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
 }
